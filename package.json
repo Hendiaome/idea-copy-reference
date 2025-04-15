@@ -1,0 +1,79 @@
+{
+  "name": "idea-copy-reference",
+  "displayName": "IDEA Copy Reference",
+  "description": "Copy and paste Java references with automatic imports",
+  "version": "1.0.0",
+  "publisher": "hendiaome",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hendiaome/idea-copy-reference"
+  },
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "java",
+    "reference",
+    "copy",
+    "import",
+    "paste"
+  ],
+  "icon": "icon.png",
+  "activationEvents": [
+    "onLanguage:java"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "idea-copy-reference.copyJavaReference",
+        "title": "Copy Java Reference"
+      },
+      {
+        "command": "idea-copy-reference.pasteJavaReference",
+        "title": "Paste Java Reference with Import"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "idea-copy-reference.copyJavaReference",
+          "when": "editorLangId == java",
+          "group": "navigation@1"
+        },
+        {
+          "command": "idea-copy-reference.pasteJavaReference",
+          "when": "editorLangId == java",
+          "group": "navigation@1"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "14.x",
+    "@types/vscode": "^1.60.0",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "eslint": "^7.27.0",
+    "glob": "^7.1.7",
+    "minimatch": "^3.0.4",
+    "mocha": "^8.4.0",
+    "typescript": "^4.3.2",
+    "vsce": "^2.9.1",
+    "vscode-test": "^1.5.2"
+  }
+}

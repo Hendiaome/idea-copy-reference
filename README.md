@@ -18,6 +18,8 @@
 If you've switched from IntelliJ IDEA to VS Code for Java development, you'll immediately appreciate having this familiar functionality. Save time and reduce errors by quickly copying and pasting fully qualified references with proper imports.
 
 ## 📋 Usage
+<img width="659" alt="image" src="https://github.com/user-attachments/assets/1944af69-c1ee-420b-aa03-3fa083f82353" />
+
 
 ### Copy a Reference
 

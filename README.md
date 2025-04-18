@@ -1,67 +1,72 @@
-# IDEA Copy Reference
+# Copy Reference like IDEA
 
-A VSCode extension that provides IntelliJ IDEA-like "Copy Reference" functionality for Java code. This extension allows you to quickly copy qualified references to Java elements and automatically manage imports.
+🚀 A VSCode extension that brings the powerful IntelliJ IDEA "Copy Reference" functionality to Java development in VS Code. Boost your productivity with seamless reference copying and automatic import management.
 
-## Features
+## ✨ Features
 
-- Copy fully qualified references to Java elements:
-  - Classes
-  - Interfaces
-  - Enums
-  - Methods
-  - Fields
-- Automatically add import statements when pasting
-- Smart reference formatting based on element type
-- Simplified references on paste (turns `com.example.User` into `User`)
+- **Copy Java References** with a simple right-click - just like in IntelliJ IDEA
+- **Automatic Import Management** when pasting references
+- **Smart Reference Formatting** based on element type
+- Support for all Java elements:
+  - Classes & Interfaces
+  - Methods & Constructors
+  - Fields & Constants
+  - Enums & Annotations
 
-## Usage
+## 🔥 Why You Need This
+
+If you've switched from IntelliJ IDEA to VS Code for Java development, you'll immediately appreciate having this familiar functionality. Save time and reduce errors by quickly copying and pasting fully qualified references with proper imports.
+
+## 📋 Usage
 
 ### Copy a Reference
 
-1. Open a Java file
-2. Place your cursor on any Java element (class, interface, enum, method, field)
-3. Right-click and select "Copy Java Reference" from the context menu
+1. Open any Java file
+2. Place your cursor on a Java element (class, method, field, etc.)
+3. Right-click and select "Copy Java Reference"
 4. The fully qualified reference is copied to your clipboard
 
-### Paste a Reference with Import
+### Paste with Automatic Import
 
 1. Copy a Java reference using the extension
 2. Navigate to where you want to use the reference
-3. Right-click and select "Paste Java Reference with Import" from the context menu
-4. The extension will:
-   - Automatically add the appropriate import statement
-   - Insert the simplified reference at the cursor position
-   - Format the reference according to its type (for methods, adds parentheses)
+3. Right-click and select "Paste Java Reference with Import"
+4. The extension automatically:
+   - Adds the appropriate import statement
+   - Inserts the simplified reference at cursor position
+   - Formats the reference according to its type
 
 ### Element-Specific Behavior
 
 #### Classes, Interfaces, and Enums
-- Copies fully qualified name: `com.example.User`
-- Pastes simplified name with import: `User`
+- Copies: `com.example.User`
+- Pastes: `User` with import added
 
 #### Methods
-- Copies fully qualified method reference: `com.example.User.getId`
-- Pastes method call with import: `User.getId();`
+- Copies: `com.example.User.getId`
+- Pastes: `User.getId()` with import added
 
 #### Fields
-- Copies fully qualified field reference: `com.example.User.STATUS`
-- Pastes field reference with import: `User.STATUS`
+- Copies: `com.example.User.STATUS`
+- Pastes: `User.STATUS` with import added
 
-
-## Requirements
+## 🛠️ Requirements
 
 - VS Code 1.60.0 or higher
 - Java extension for VS Code
 
-## Contributing
+## 👨‍💻 Contributing
 
 Contributions are welcome! Feel free to submit issues or pull requests on our [GitHub repository](https://github.com/hendiaome/idea-copy-reference).
 
+## 📝 Release Notes
 
-## Release Notes
+### 1.0.1
+- change name
 
 ### 1.0.0
 
-- Added support for interfaces, enums, methods and fields
-- Improved reference detection and formatting
-- Smart handling of method references with parentheses
+- Full support for classes, interfaces, enums, methods and fields
+- Smart reference detection and formatting
+- Automatic import management
+- Method references with proper parentheses handling

@@ -1,8 +1,8 @@
 {
   "name": "idea-copy-reference",
-  "displayName": "IDEA Copy Reference",
+  "displayName": "Copy Reference like IDEA",
   "description": "Copy and paste Java references with automatic imports",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "hendiaome",
   "repository": {
     "type": "git",

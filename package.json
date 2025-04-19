@@ -1,12 +1,12 @@
 {
-  "name": "idea-copy-reference",
-  "displayName": "Copy Reference like IDEA",
+  "name": "java-reference-tool",
+  "displayName": "Java Reference Copy & Paste Tool",
   "description": "Copy and paste Java references with automatic imports",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "publisher": "hendiaome",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hendiaome/idea-copy-reference"
+    "url": "https://github.com/hendiaome/java-reference-tool"
   },
   "engines": {
     "vscode": "^1.60.0"
@@ -29,23 +29,23 @@
   "contributes": {
     "commands": [
       {
-        "command": "idea-copy-reference.copyJavaReference",
+        "command": "java-reference-tool.copyJavaReference",
         "title": "Copy Java Reference"
       },
       {
-        "command": "idea-copy-reference.pasteJavaReference",
+        "command": "java-reference-tool.pasteJavaReference",
         "title": "Paste Java Reference with Import"
       }
     ],
     "menus": {
       "editor/context": [
         {
-          "command": "idea-copy-reference.copyJavaReference",
+          "command": "java-reference-tool.copyJavaReference",
           "when": "editorLangId == java",
           "group": "navigation@1"
         },
         {
-          "command": "idea-copy-reference.pasteJavaReference",
+          "command": "java-reference-tool.pasteJavaReference",
           "when": "editorLangId == java",
           "group": "navigation@1"
         }
@@ -60,7 +60,7 @@
     "lint": "eslint src --ext ts",
     "test": "node ./out/test/runTest.js",
     "package": "vsce package",
-    "clean": "rm -rf out *.vsix idea-copy-reference-*"
+    "clean": "rm -rf out *.vsix java-reference-tool-*"
   },
   "devDependencies": {
     "@types/glob": "^7.1.3",

@@ -77,8 +77,10 @@ function getlipboardText(packageName: string, className: string, warp: SymbolKin
     const type = warp.kind;
     let array = [packageName, className];
 
-    if (type === vscode.SymbolKind.Class) {
-        // 如果是一个类，则不需要添加后缀
+    if (type === vscode.SymbolKind.Class
+         || type === vscode.SymbolKind.Interface 
+         || type === vscode.SymbolKind.Enum) {
+        // 如果是一个类， 接口， 枚举，则不需要添加后缀
         return array.join(".");
     } else if (type === vscode.SymbolKind.Method) {
         // 如果是一个方法，则添加()
@@ -95,8 +97,10 @@ function getInsertText(packageName: string, className: string, warp: SymbolKindW
     const type = warp.kind;
     let array = [className];
 
-    if (type === vscode.SymbolKind.Class) {
-        // 如果是一个类，则不需要添加后缀
+    if (type === vscode.SymbolKind.Class
+         || type === vscode.SymbolKind.Interface 
+         || type === vscode.SymbolKind.Enum) {
+        // 如果是一个类， 接口， 枚举，则不需要添加后缀
         return array.join(".");
     } else if (type === vscode.SymbolKind.Method) {
         // 如果是一个方法，则添加()

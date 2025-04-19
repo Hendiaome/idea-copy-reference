@@ -1,10 +1,10 @@
-# Copy Reference like IDEA
+# Java Reference Copy & Paste Tool
 
-🚀 A VSCode extension that brings the powerful IntelliJ IDEA "Copy Reference" functionality to Java development in VS Code. Boost your productivity with seamless reference copying and automatic import management.
+🚀 A VSCode extension for enhancing Java development with powerful reference copying and automatic import management functionality.
 
 ## ✨ Features
 
-- **Copy Java References** with a simple right-click - just like in IntelliJ IDEA
+- **Copy Java References** with a simple right-click
 - **Automatic Import Management** when pasting references
 - **Smart Reference Formatting** based on element type
 - Support for all Java elements:
@@ -15,7 +15,7 @@
 
 ## 🔥 Why You Need This
 
-If you've switched from IntelliJ IDEA to VS Code for Java development, you'll immediately appreciate having this familiar functionality. Save time and reduce errors by quickly copying and pasting fully qualified references with proper imports.
+This extension helps you save time and reduce errors by quickly copying and pasting fully qualified references with proper imports. It's especially useful for developers working with complex Java codebases.
 
 ## 📋 Usage
 <img width="659" alt="image" src="https://github.com/user-attachments/assets/1944af69-c1ee-420b-aa03-3fa083f82353" />
@@ -59,12 +59,15 @@ If you've switched from IntelliJ IDEA to VS Code for Java development, you'll im
 
 ## 👨‍💻 Contributing
 
-Contributions are welcome! Feel free to submit issues or pull requests on our [GitHub repository](https://github.com/hendiaome/idea-copy-reference).
+Contributions are welcome! Feel free to submit issues or pull requests on our [GitHub repository](https://github.com/hendiaome/java-reference-tool).
 
 ## 📝 Release Notes
 
+### 1.0.3
+- Performance improvements and bug fixes
+
 ### 1.0.1
-- change name
+- Change name
 
 ### 1.0.0
 

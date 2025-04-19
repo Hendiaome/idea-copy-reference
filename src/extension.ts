@@ -10,7 +10,7 @@ let lastCopiedReference: JavaReference | null = null;
 
 export function activate(context: vscode.ExtensionContext) {
     // 注册复制引用命令
-    const copyDisposable = vscode.commands.registerCommand('idea-copy-reference.copyJavaReference', async () => {
+    const copyDisposable = vscode.commands.registerCommand('java-reference-tool.copyJavaReference', async () => {
         try {
             const editor = vscode.window.activeTextEditor;
             if (!editor || editor.document.languageId !== 'java') {
@@ -49,7 +49,7 @@ export function activate(context: vscode.ExtensionContext) {
     });
 
     // 注册自定义粘贴命令 - 通过菜单触发
-    const pasteDisposable = vscode.commands.registerCommand('idea-copy-reference.pasteJavaReference', async () => {
+    const pasteDisposable = vscode.commands.registerCommand('java-reference-tool.pasteJavaReference', async () => {
         try {
             // 检查是否有活动的编辑器和复制的引用
             const editor = vscode.window.activeTextEditor;

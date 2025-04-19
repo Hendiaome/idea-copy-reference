@@ -1,6 +1,6 @@
 {
   "name": "java-reference-tool",
-  "displayName": "Java Reference Copy & Paste Tool",
+  "displayName": "Copy Reference & Paste Tool For Java",
   "description": "Copy and paste Java references with automatic imports",
   "version": "1.0.4",
   "publisher": "hendiaome",

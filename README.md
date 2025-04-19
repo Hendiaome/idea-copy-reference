@@ -1,4 +1,4 @@
-# Java Reference Copy & Paste Tool
+# Copy Reference & Paste Tool For Java
 
 🚀 A VSCode extension for enhancing Java development with powerful reference copying and automatic import management functionality.
 
